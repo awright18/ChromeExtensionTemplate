@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>0.1</PackageVersion>
+    <PackageId>AWright18.ChromeExtension.Template</PackageId>
+    <Title>AWright18 ChromeExtension Template</Title>
+    <Authors>Adam Wright</Authors>
+    <Description>Templates to use when creating a Chrome Extension.</Description>
+    <PackageTags>dotnet-new;templates;chrome;extension</PackageTags>
+    <TargetFramework>net6.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include=".\**\*;.gitignore" Exclude=".\**\bin\**;.\**\obj\**;.\**\.idea\**;.\ChromeExtensionTemplate.csproj;" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
